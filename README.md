@@ -2,4 +2,4 @@
 
 Visit : http://parthoiiitm.github.io/match_winners to see the project in action.
 
-![Image](https://raw.githubusercontent.com/parthoiiitm/match_winners/blob/master/static/lib/img/Match_Winners.png)
+![Image](https://raw.githubusercontent.com/parthoiiitm/match_winners/master/static/lib/img/Match_Winners.png)
