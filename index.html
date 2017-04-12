@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Average Performance</title>
+  <link rel="stylesheet" href="./static/lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+  <link rel="stylesheet" href="./static/lib/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./static/lib/css/d3.slider.css" media="screen" />
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Arimo|Quicksand" rel="stylesheet" type='text/css'>
+</head>
+
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./">Yearwise performance comparison of match winners</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-7">
+        <div class="row">
+
+        <div class="col-sm-12">
+            <div class="chart-wrapper">
+              <div class="chart-stage">
+                    <div id="slider"></div>    
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-sm-12">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                <b>How similar are the players based on average total points won by them??</b>
+              </div>
+              <div class="chart-stage">
+                  <div id="viz"></div>
+                    
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+     <div class="col-sm-5">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            <b>Average Service Performance Metrics (KPH)</b>
+          </div>
+          <div class="chart-stage">
+            
+            <div id="service"> </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-sm-5 col-sm-5">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            <b>Average Match Performance Metrics (%)</b>
+          </div>
+          <div class="chart-stage">
+            <div id="match"> </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      
+    </div>
+  </div>
+
+    <hr>
+
+  </div>
+
+  <script src="./static/lib/js/jquery.min.js"></script>
+  <script src="./static/lib/js/bootstrap.min.js"></script>
+  <script src="./static/lib/js/holder.js"></script>
+  <script src="./static/lib/js/d3.v3.js"></script>
+  <script src="./static/lib/js/d3.slider.js"></script>
+
+  <!-- Here is the D3 code for assignment 2 -->
+  <script src="./static/lib/js/Assign2_ParthoMandal.js"></script>
+  <script>d3.json("./static/data/output_2013.json", draw);</script>
+
+
+
+
+  <script>
+    Holder.add_theme("white", { background:"#fff", foreground:"#a7a7a7", size:10 });
+  </script>
+
+  <script src="./static/lib/js/keen.min.js"></script>
+  <script src="./static/lib/js/meta.js"></script>
+
+</body>
+</html>
